@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Arithmetic - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Arithmetic.res" /d "NDEBUG" /d "_AFXDLL" "D:\Microsoft Visual Studio\MyProjects\nn\Arithmetic\Arithmetic.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPAD.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Release/Arithmetic.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Microsoft Visual Studio\MyProjects\nn\Arithmetic\Arithmetic.cpp"
+"D:\Microsoft Visual Studio\MyProjects\nn\Arithmetic\Procedure.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPAD.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPAE.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Release/Arithmetic.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Microsoft Visual Studio\MyProjects\nn\Arithmetic\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPAE.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPAF.tmp" with contents
+[
+../Bin/MatrixBase.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"../Bin/Arithmetic.pdb" /machine:I386 /def:".\Arithmetic.def" /out:"../Bin/Arithmetic.dll" /implib:"../Bin/Arithmetic.lib" 
+".\Release\Arithmetic.obj"
+".\Release\Procedure.obj"
+".\Release\StdAfx.obj"
+".\Release\Arithmetic.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPAF.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Arithmetic.cpp
+Procedure.cpp
+Generating Code...
+Linking...
+   Creating library ../Bin/Arithmetic.lib and object ../Bin/Arithmetic.exp
+
+
+
+<h3>Results</h3>
+Arithmetic.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

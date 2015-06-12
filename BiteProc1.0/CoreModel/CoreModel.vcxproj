@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9DC50B35-C1E1-40D0-A255-D9F2F3F4E8C1}</ProjectGuid>
+    <RootNamespace>CoreModel</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\Common;..\Util;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\AlgParamConfig.h" />
+    <ClInclude Include="..\Common\BaseAppWnd.h" />
+    <ClInclude Include="..\Common\BaseArth.h" />
+    <ClInclude Include="..\Common\BaseTrainWnd.h" />
+    <ClInclude Include="..\Common\BasicDevice.h" />
+    <ClInclude Include="..\Common\IAppMsg.h" />
+    <ClInclude Include="..\Common\IEEGViewer.h" />
+    <ClInclude Include="..\Common\ITrainMsg.h" />
+    <ClInclude Include="..\Common\ManagedData.h" />
+    <ClInclude Include="..\Common\Streamoper.h" />
+    <ClInclude Include="..\Common\Stringoper.h" />
+    <ClInclude Include="..\Common\Structdefine.h" />
+    <ClInclude Include="..\Util\CommonUtile.h" />
+    <ClInclude Include="..\Util\FileOper.h" />
+    <ClInclude Include="..\Util\FiltFilt.h" />
+    <ClInclude Include="..\Util\Matrix.h" />
+    <ClInclude Include="AppConfig.h" />
+    <ClInclude Include="BaseEEGViewerWnd.h" />
+    <ClInclude Include="Configsel\BiteThresholdConfig.h" />
+    <ClInclude Include="Configsel\ConfigSelDlg.h" />
+    <ClInclude Include="Configsel\HLConfig.h" />
+    <ClInclude Include="Configsel\LeftRightBothConfig.h" />
+    <ClInclude Include="Configsel\PublicConfig.h" />
+    <ClInclude Include="Configsel\TLConfig.h" />
+    <ClInclude Include="CoreModel.h" />
+    <ClInclude Include="CoreModelDoc.h" />
+    <ClInclude Include="CoreModelView.h" />
+    <ClInclude Include="DeviceConfig.h" />
+    <ClInclude Include="DeviceSelDlg.h" />
+    <ClInclude Include="EEGView.h" />
+    <ClInclude Include="InitDlg.h" />
+    <ClInclude Include="Loader\AppLoader.h" />
+    <ClInclude Include="Loader\ArthLoad.h" />
+    <ClInclude Include="Loader\DeviceLoader.h" />
+    <ClInclude Include="Loader\EEGViewerLoader.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MySpliter.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TrainWndLoader.h" />
+    <ClInclude Include="UserConfig.h" />
+    <ClInclude Include="ViewerConfig.h" />
+    <ClInclude Include="ViewerSelDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\AlgParamConfig.cpp" />
+    <ClCompile Include="..\Common\BaseAppWnd.cpp" />
+    <ClCompile Include="..\Common\BaseArth.cpp" />
+    <ClCompile Include="..\Common\BaseTrainWnd.cpp" />
+    <ClCompile Include="..\Common\BasicDevice.cpp" />
+    <ClCompile Include="..\Common\ManagedData.cpp" />
+    <ClCompile Include="..\Common\Streamoper.cpp" />
+    <ClCompile Include="..\Common\Stringoper.cpp" />
+    <ClCompile Include="..\Util\CommonUtile.cpp" />
+    <ClCompile Include="..\Util\FileOper.cpp" />
+    <ClCompile Include="..\Util\FiltFilt.cpp" />
+    <ClCompile Include="AppConfig.cpp" />
+    <ClCompile Include="BaseEEGViewerWnd.cpp" />
+    <ClCompile Include="Configsel\BiteThresholdConfig.cpp" />
+    <ClCompile Include="Configsel\ConfigSelDlg.cpp" />
+    <ClCompile Include="Configsel\HLConfig.cpp" />
+    <ClCompile Include="Configsel\LeftRightBothConfig.cpp" />
+    <ClCompile Include="Configsel\PublicConfig.cpp" />
+    <ClCompile Include="Configsel\TLConfig.cpp" />
+    <ClCompile Include="CoreModel.cpp" />
+    <ClCompile Include="CoreModelDoc.cpp" />
+    <ClCompile Include="CoreModelView.cpp" />
+    <ClCompile Include="DeviceConfig.cpp" />
+    <ClCompile Include="DeviceSelDlg.cpp" />
+    <ClCompile Include="EEGView.cpp" />
+    <ClCompile Include="InitDlg.cpp" />
+    <ClCompile Include="Loader\AppLoader.cpp" />
+    <ClCompile Include="Loader\ArthLoad.cpp" />
+    <ClCompile Include="Loader\DeviceLoader.cpp" />
+    <ClCompile Include="Loader\EEGViewerLoader.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MySpliter.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TrainWndLoader.cpp" />
+    <ClCompile Include="UserConfig.cpp" />
+    <ClCompile Include="ViewerConfig.cpp" />
+    <ClCompile Include="ViewerSelDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CoreModel.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\CoreModel.ico" />
+    <Image Include="res\CoreModelDoc.ico" />
+    <Image Include="res\oper.bmp" />
+    <Image Include="res\output_wnd.ico" />
+    <Image Include="res\output_wnd_hc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CoreModel.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CoreModel.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

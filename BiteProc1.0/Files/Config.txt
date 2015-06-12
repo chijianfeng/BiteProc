@@ -1,0 +1,54 @@
+%%the parma for calculate the throld,for different data file has the different bite count.
+%%The result is all template result,you can change in the coremodule's dialog
+Bite IsTrain = 1		%1 is for train 0 is not
+Bite threshold path = ..\\Files\\Bite_threshold.txt 
+Bite Train time = 20			% unit is second
+Bite count = 8
+Bite Data Path = BiteThold.dat	%咬牙阈值计算数据文件
+Bite Throld Module Path = BiteThroldTrain.dll 	%bite throld train module(default)
+
+%%the parma for Classify
+Classify IsTrain = 1		%1 is for train 0 is not
+Classify Model Path =  ..\\Files\\Classify_Model.txt 	%classfire for left ,right or both side bite.
+Classify Train Time = 60 60 60	%the time is a vector, stand for the left right and both train time.
+Classify ReTrain = 0		% 1 is for retrain if the data is exist,or can't retrain the model
+Classify Left Data Path = classify_left.dat	%the left bite data
+Classify Both Data Path = classify_Both.dat	%the bote bite data
+Classify Right Data Path = classify_Right.dat	%the Right bite data
+Classify Module Path = 	ClassifyTrain.dll %the classify train module
+
+%%light bite and heavy bite train parameter
+HL IsTrain = 1    %1 1		%stand for left right and both heavy or light threshold.
+HL Train time = 10 10 10 10 10 10       %%%LL LH BL BH RL RH
+HL ReTrain = 0			%retrain the HL value and net weight.
+HL Model Path = ..\\Files\\HL_Model.txt
+HL Module Path = HLTrain.dll	%the HL Train Module
+HL Left Light Data Path = HL_Left_Light.dat
+HL Left Heavy Data Path = HL_Left_Heavy.dat
+HL Right Light Data Path = HL_Right_Light.dat
+HL Right Heavy Data Path = HL_Right_Heavy.dat
+HL Both Light Data Path = HL_Both_Light.dat
+HL Both Heavy Data Path = HL_Both_Heavy.dat
+
+%% two bite and long bite train module param
+TL IsTrain = 1		% 1 is train 0 is not train
+Two Bite Train Time = 10 10 10	% left two bite Both two bite right two bite
+TL Left param Path = TL_Left_param.txt	% different train modul has the different param
+TL Both Param path = TL_Both_param.txt	% 
+TL Right Param Path = TL_Right_param.txt
+TL Left Data Path = TL_Left.dat
+TL Both Data Path = TL_Both.dat
+TL Right Data Path = TL_Right.dat
+TL Left Model Path = TL_Left_Model.txt	%the model path
+TL Both Model Path = TL_Both_Model.txt
+TL Right Model Path = TL_Right_Model.txt
+TL Module Path = TLTrain.dll			%the module path(dll) 
+TL ReTrain = 0		%if retrain is 1 the Istrain is unaviable
+
+%basic param for alg
+Window Length = 8		%%the min process window
+OverLapped Window Length = 10		%%overlap window length.
+
+Left Throld = -0.33		%%the left judge threshold
+Right Throld = 0.33		%%
+

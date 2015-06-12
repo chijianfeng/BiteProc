@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="BCI2000File">
+      <UniqueIdentifier>{d60cc8ad-8412-48dd-b752-cc77cdc4be9a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="FileReader.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\FileReader.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FileReader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\ArithmeticExpression.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\BCI2000FileReader.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\BCIError.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\Brackets.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\EncodedString.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\ExpressionParser.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\GenericSignal.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\HierarchicalLabel.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\LabelIndex.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\MeasurementUnits.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\Param.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\ParamList.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\ParamRef.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\PhysicalUnit.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\SignalProperties.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\SignalType.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\State.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\StateList.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\StateVector.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000File\StateVectorSample.cpp">
+      <Filter>BCI2000File</Filter>
+    </ClCompile>
+    <ClCompile Include="BCI2000FileRead.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Streamoper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Stringoper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BasicDevice.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\ArithmeticExpression.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\BCI2000FileReader.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\BCIError.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\Brackets.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\defines.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\EncodedString.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\ExpressionParser.hpp">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\GenericSignal.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\HierarchicalLabel.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\LabelIndex.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\LengthField.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\MeasurementUnits.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\Param.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\ParamList.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\ParamRef.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\PhysicalUnit.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\SignalProperties.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\SignalType.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\State.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\StateList.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\StateRef.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\StateVector.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\StateVectorSample.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000File\ValueList.h">
+      <Filter>BCI2000File</Filter>
+    </ClInclude>
+    <ClInclude Include="BCI2000FileRead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Streamoper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Stringoper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BasicDevice.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Structdefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FileReader.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

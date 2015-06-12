@@ -1,0 +1,3 @@
+Width = 1500
+Height = 550
+App Module Path = AppNumbers.dll

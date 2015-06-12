@@ -1,0 +1,7 @@
+Device_Path = EmotivReader.dll  ##the DLL path
+Channel_number = 2   #Channel number
+SampleRete = 128   #the samplerate of the device
+Channels = 3 12   %channels that collection in format of 1 2 ...
+LParam =   #if the read data file the Lparam is the data file path , other is NULL##
+Buffer_Size = 8   #recommend large than 8.
+Mode = 0   #0 is normal , 1 is impedance

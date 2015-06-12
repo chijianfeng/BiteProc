@@ -1,0 +1,12 @@
+L_Vol = 1.64001 
+L_Std = 0 
+L_Light_Vol = 1.2888 
+L_Heavy_Vol = 1.64001 
+R_Vol = 1.59232 
+R_Std = 0 
+R_Light_Vol = 1.2706 
+R_Heavy_Vol = 1.59232 
+LR_Vol = 1.94669 
+LR_Std = 0 
+LR_Light_Vol = 1.15663 
+LR_Heavy_Vol = 1.94669 

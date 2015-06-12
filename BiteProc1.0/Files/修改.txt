@@ -1,0 +1,11 @@
+1.BiteThresholdConfig.cpp
+void BiteThresholdConfig::SaveFile()中
+添加 GetDlgItemText(IDC_EBiteCount, m_biteCount); 
+2.BiteThroldWnd.cpp
+训练时m_strState状态紊乱
+3.BiteThroldWnd.cpp   
+~CBiteThroldWnd() 中
+m_pAlogrithm 改为 m_pAlogrithm[0]
+4.AppChar NumberShow.cpp
+SendAppCmd中 case Bothoneheavybite 改为
+msg = 0x40

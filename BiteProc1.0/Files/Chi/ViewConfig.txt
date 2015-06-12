@@ -1,0 +1,7 @@
+Search Dir = D:\Documents\Visual Studio 2013\Projects\BiteProc_3_13\Debug  %视图所在路径
+Avaliable Model = D:\Documents\Visual Studio 2013\Projects\BiteProc_3_13\Debug\StatnderView.dll  %所选择的视图名
+Length = 1265   %窗口长度
+Width = 50   %窗口宽度
+Max Value = 5500   %最大值
+Min Value = 4000   %最小值
+IsAutoMaxMin = 1   %是否自动化最大最小值

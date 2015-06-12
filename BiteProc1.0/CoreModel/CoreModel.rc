@@ -1,0 +1,827 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#include ""res\\CoreModel.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxprint.rc""        // 打印/打印预览资源\r\n"
+    "#include ""l.CHS\\afxribbon.rc""        // MFC 功能区和控件条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CoreModel.ico"
+IDR_CoreModelTYPE       ICON                    "res\\CoreModelDoc.ico"
+IDI_OUTPUT_WND          ICON                    "res\\output_wnd.ico"
+IDI_OUTPUT_WND_HC       ICON                    "res\\output_wnd_hc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDB_BOPER               BITMAP                  "res\\oper.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "Training(&T)", MENUBREAK
+    BEGIN
+        MENUITEM "Train Setting",               ID_TRAINING_TRAINSETTING
+    END
+    POPUP "Setting(&S)"
+    BEGIN
+        MENUITEM "Device",                      ID_DEVICESETTING_SELDEVICE
+        MENUITEM "Alogrithm",                   ID_SETTING_ALOGRITHM
+        MENUITEM "Application",                 ID_SETTING_APPLICATION
+        MENUITEM "EEG Viewer",                  ID_SETTING_EEGVIEWER
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 CoreModel(&A)...",         ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_OUTPUT_POPUP MENU
+BEGIN
+    POPUP "弹出项"
+    BEGIN
+        MENUITEM "复制(&C)",                      ID_EDIT_COPY
+        MENUITEM "清除(&C)",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "隐藏(&H)",                      ID_VIEW_OUTPUTWND
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "关于 CoreModel(&A)...",         ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Windows 7(&D)",               ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CoreModel"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "CoreModel，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_BASETRAINWND DIALOG 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话框"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,209,179,50,14
+    PUSHBUTTON      "取消",IDCANCEL,263,179,50,14
+END
+
+IDD_INITDLG DIALOGEX 0, 0, 286, 136
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create User"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,63,112,50,14
+    PUSHBUTTON      "取消",IDCANCEL,163,113,50,14
+    LTEXT           "User:",IDC_STATIC,59,33,18,8
+    EDITTEXT        IDC_EUSERNAME,96,30,111,16,ES_AUTOHSCROLL
+    LTEXT           "Users",IDC_STATIC,56,64,18,8
+    COMBOBOX        IDC_COMBOUSERLIST,95,64,113,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "按照默认设置，不再提示",IDC_CHECKUSER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,85,94,10
+END
+
+IDD_DEVICESELDLG DIALOGEX 0, 0, 329, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Selector"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,176,153,50,14
+    PUSHBUTTON      "取消",IDCANCEL,272,153,50,14
+    LTEXT           "Search Dir:",IDC_STATIC,22,19,35,8
+    EDITTEXT        IDC_EDEVSEARCHDIR,63,16,102,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BDEVSEARCHDIR,179,17,50,14
+    LTEXT           "Avaliable Devcie:",IDC_STATIC,21,39,54,8
+    COMBOBOX        IDC_COMDEVSEL,78,38,86,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "SampleRate:",IDC_STATIC,22,63,40,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,20,54,240,1
+    COMBOBOX        IDC_COMDEVSAMPLERATE,72,60,48,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "(HZ)",IDC_STATIC,125,61,15,8
+    LTEXT           "Channels:",IDC_STATIC,30,125,32,8
+    EDITTEXT        IDC_EDEVCHANNELS,73,121,197,14,ES_AUTOHSCROLL
+    LTEXT           "(Sperate the channel number with ' ')",IDC_STATIC,53,139,122,8
+    GROUPBOX        "Mode",IDC_STATIC,155,57,84,27
+    CONTROL         "Normal",IDC_RDEVNORMAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,164,69,38,10
+    CONTROL         "Imp",IDC_RDEVIMP,"Button",BS_AUTORADIOBUTTON,205,69,29,10
+    LTEXT           "Buffer Size:",IDC_STATIC,22,84,37,8
+    EDITTEXT        IDC_EDEVBUFFERSIZE,72,82,49,14,ES_AUTOHSCROLL
+    LTEXT           "LParam:",IDC_STATIC,34,102,25,8
+    EDITTEXT        IDC_ELPARAM,72,101,92,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BLPARAM,175,100,50,14
+END
+
+IDD_VIEWERSELDLG DIALOGEX 0, 0, 337, 152
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EEG Viewer Select"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,202,131,50,14
+    PUSHBUTTON      "取消",IDCANCEL,280,131,50,14
+    LTEXT           "Searh Dir:",IDC_STATIC,17,21,32,8
+    EDITTEXT        IDC_EVIEWSEARCHDIR,55,17,170,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BVIEWSEARCHDIR,229,17,50,14
+    COMBOBOX        IDC_COMVIEWMODEL,81,38,146,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Avaliable Model:",IDC_STATIC,17,40,52,8
+    LTEXT           "Message:",IDC_STATIC,20,62,30,8
+    EDITTEXT        IDC_EVIEWMESSAGE,57,58,220,22,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Length:",IDC_STATIC,21,89,25,8
+    EDITTEXT        IDC_EDITVIEWLENGTH,53,87,40,14,ES_AUTOHSCROLL
+    LTEXT           "Width:",IDC_STATIC,23,110,22,8
+    EDITTEXT        IDC_EDITVIEWWIDTH,53,109,40,14,ES_AUTOHSCROLL
+    LTEXT           "Max Value:",IDC_STATIC,157,89,36,8
+    LTEXT           "Min Value:",IDC_STATIC,159,107,34,8
+    EDITTEXT        IDC_EVIEWMAX,203,87,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EVIEWMIN,202,107,40,14,ES_AUTOHSCROLL
+    CONTROL         "Auto",IDC_CHKVIEWAUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,262,89,31,10
+END
+
+IDD_TLDIALOG DIALOGEX 0, 0, 376, 215
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ETwoBiteTrainTime,71,14,77,15,ES_AUTOHSCROLL
+    LTEXT           "(S)",IDC_STATIC,152,17,10,8
+    LTEXT           "Left TL Parma Path",IDC_STATIC,7,36,62,8
+    EDITTEXT        IDC_ELeftTLParmaPath,71,35,77,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BLeftTLParmaPath,154,37,50,14
+    LTEXT           "Left TL Data Path",IDC_STATIC,7,55,57,8
+    EDITTEXT        IDC_ELeftTLDataPath,72,53,77,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BLeftTLDataPath,154,54,50,14
+    LTEXT           "Both TL Param Path",IDC_STATIC,7,72,64,8
+    EDITTEXT        IDC_EBothTLParamPath,71,71,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BBothTLParamPath,153,71,50,14
+    LTEXT           "Both TL Data Path",IDC_STATIC,7,92,59,8
+    EDITTEXT        IDC_EBothTLDataPath,71,91,75,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BBothTLDataPath,153,91,49,14
+    LTEXT           "Right TL Param Path",IDC_STATIC,7,111,66,8
+    LTEXT           "Right TL Data Path",IDC_STATIC,7,129,61,8
+    EDITTEXT        IDC_ERightTLParamPath,73,110,74,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BRightTLParamPath,154,110,50,14
+    EDITTEXT        IDC_ERightTLDataPath,73,129,73,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BRightTLDataPath,154,130,50,14
+    LTEXT           "Left Model Path",IDC_STATIC,7,153,51,8
+    EDITTEXT        IDC_ELeftModelPath,61,150,57,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BLeftModelPath,121,148,50,14
+    LTEXT           "Right Model Path",IDC_STATIC,177,150,55,8
+    EDITTEXT        IDC_ERightModelPath,238,149,52,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BRightModelPath,302,149,50,14
+    LTEXT           "Both Model Path",IDC_STATIC,7,169,53,8
+    EDITTEXT        IDC_EBothModelPath,61,168,57,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BBothModelPath,122,167,50,14
+    LTEXT           "TL Module Path",IDC_STATIC,177,167,50,8
+    EDITTEXT        IDC_ETLModulePath,237,166,55,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BTLModulePath,305,167,50,14
+    GROUPBOX        "TLIsTrain",IDC_STATIC,227,44,84,35
+    GROUPBOX        "TLReTrain",IDC_STATIC,225,92,84,32
+    CONTROL         "0",IDC_RTLNoTrain,"Button",BS_AUTORADIOBUTTON,267,60,20,10
+    CONTROL         "1",IDC_RTLTrain,"Button",BS_AUTORADIOBUTTON,237,60,20,10
+    LTEXT           "Two Bite Train Time",IDC_STATIC,7,16,63,8
+    CONTROL         "1",IDC_RTLReTrain,"Button",BS_AUTORADIOBUTTON,239,107,20,10
+    CONTROL         "0",IDC_RTLNoReTrain,"Button",BS_AUTORADIOBUTTON,265,107,20,10
+    LTEXT           "(1 is for trian,0 is not for train)",IDC_STATIC,215,132,99,8
+    LTEXT           "(1 is for Retrian,0 is not for Retrain)",IDC_STATIC,213,78,116,8
+    LTEXT           "T(Two) 快速两次咬  L(Long) 长咬",IDC_STATIC,226,15,87,19
+END
+
+IDD_PUBLICDIALOG DIALOGEX 0, 0, 309, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Window Length",IDC_STATIC,17,22,50,8
+    EDITTEXT        IDC_EWindowLength,78,19,67,14,ES_AUTOHSCROLL
+    LTEXT           "(S)",IDC_STATIC,153,20,10,8
+    LTEXT           "OverLapped WinLen",IDC_STATIC,7,52,66,8
+    EDITTEXT        IDC_EOverLappedWinLen,78,51,68,14,ES_AUTOHSCROLL
+    LTEXT           "Left Threshold",IDC_STATIC,20,82,47,8
+    LTEXT           "Right Threshold",IDC_STATIC,15,111,51,8
+    EDITTEXT        IDC_ELeftThreshold,78,80,67,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ERightThreshold,77,108,67,14,ES_AUTOHSCROLL
+END
+
+IDD_LEFTRIGHTBOTHDIALOG DIALOGEX 0, 0, 346, 217
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "model Path",IDC_STATIC,16,42,36,8
+    EDITTEXT        IDC_EModelPath,68,42,73,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BModelPath,148,42,50,14
+    EDITTEXT        IDC_ELeftDataPath,68,67,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EBothDataPath,68,116,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EModulePath,68,141,73,14,ES_AUTOHSCROLL
+    LTEXT           "Left Data Path",IDC_STATIC,7,68,48,8
+    EDITTEXT        IDC_ERightDataPath,68,92,73,14,ES_AUTOHSCROLL
+    LTEXT           "Right Data Path",IDC_STATIC,7,94,52,8
+    LTEXT           "Both Data Path",IDC_STATIC,7,117,50,14
+    LTEXT           "Module Path",IDC_STATIC,7,144,40,8
+    PUSHBUTTON      "Browser...",IDC_BLeftDataPath,148,67,50,14
+    PUSHBUTTON      "Browser...",IDC_BRightDataPath,148,92,50,14
+    PUSHBUTTON      "Browser...",IDC_BBothDataPath,148,116,50,14
+    PUSHBUTTON      "Browser...",IDC_BModulePath,148,140,50,14
+    GROUPBOX        "ModelIsTrain",IDC_STATIC,230,42,86,35
+    CONTROL         "1",IDC_RModelTrain,"Button",BS_AUTORADIOBUTTON,237,55,20,10
+    CONTROL         "0",IDC_RModelNotTrain,"Button",BS_AUTORADIOBUTTON,281,55,20,10
+    EDITTEXT        IDC_EModelTrainTime,68,16,73,14,ES_AUTOHSCROLL
+    LTEXT           "Model Train Time",IDC_STATIC,14,17,54,8
+    LTEXT           "(S)",IDC_STATIC,148,18,10,8
+    GROUPBOX        "ModelReTrain",IDC_STATIC,228,106,87,35
+    CONTROL         "1",IDC_RModelReTrain,"Button",BS_AUTORADIOBUTTON,237,120,20,10
+    CONTROL         "0",IDC_RModelNoReTrain,"Button",BS_AUTORADIOBUTTON,279,120,20,10
+    LTEXT           "(1 is for trian,0 is not for train)",IDC_STATIC,224,79,99,8
+    LTEXT           "(1 is for Retrian,0 is not for Retrain)",IDC_STATIC,216,143,116,8
+END
+
+IDD_HLDIALOG DIALOGEX 0, 0, 355, 221
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "HLIsTrain",IDC_STATIC,217,40,84,40
+    CONTROL         "1",IDC_RHLTrain,"Button",BS_AUTORADIOBUTTON,225,58,20,10
+    CONTROL         "0",IDC_RHLNoTrain,"Button",BS_AUTORADIOBUTTON,259,58,20,10
+    LTEXT           "HL Train Time",IDC_STATIC,16,15,44,8
+    LTEXT           "(S)",IDC_STATIC,147,16,10,8
+    GROUPBOX        "HLReTrain",IDC_STATIC,219,111,84,39
+    CONTROL         "1",IDC_RHLReTrain,"Button",BS_AUTORADIOBUTTON,226,127,20,10
+    CONTROL         "0",IDC_RHLNoReTrain,"Button",BS_AUTORADIOBUTTON,262,127,20,10
+    LTEXT           "HL Model Path",IDC_STATIC,14,35,46,8
+    EDITTEXT        IDC_EHLModelPath,79,34,68,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BHLModelPath,155,34,50,14
+    LTEXT           "HL Module Path",IDC_STATIC,7,53,50,8
+    EDITTEXT        IDC_EHLModulePath,79,52,68,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BHLModulePath,157,54,50,14
+    LTEXT           "Left Light Data Path",IDC_STATIC,7,73,65,8
+    EDITTEXT        IDC_ELeftLightDataPath,80,71,67,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BLeftLightDataPath,158,71,50,14
+    LTEXT           "Left Heavy Data Path",IDC_STATIC,7,92,70,8
+    LTEXT           "Right Light Data Path",IDC_STATIC,7,108,69,8
+    LTEXT           "Right Heavy Data Path",IDC_STATIC,7,123,74,8
+    LTEXT           "Both Light Data Path",IDC_STATIC,7,140,67,8
+    LTEXT           "Both Heavy Data Path",IDC_STATIC,7,156,72,8
+    EDITTEXT        IDC_ELeftHeavyDataPath,81,89,66,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BLeftHeavyDataPath,158,89,50,14
+    EDITTEXT        IDC_ERightLightDataPath,82,106,65,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BRightLightDataPath,157,106,50,14
+    EDITTEXT        IDC_ERightHeavyDataPath,82,122,65,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BRightHeavyDataPath,157,122,50,14
+    EDITTEXT        IDC_EBothLightDataPath,81,139,66,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BBothLightDataPath,158,139,50,14
+    PUSHBUTTON      "Browser...",IDC_BBothHeavyDataPath,157,155,50,14
+    EDITTEXT        IDC_EBothHeavyDataPath,81,155,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EHLTrainTime,78,14,69,14,ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "(1 is for trian,0 is not for train)",IDC_STATIC,214,82,99,8
+    LTEXT           "(1 is for Retrian,0 is not for Retrain)",IDC_STATIC,207,152,116,8
+    LTEXT           "H(Heavy) 重咬     L(Light) 轻咬 ",IDC_STATIC,181,15,107,8
+END
+
+IDD_CONFIGSEL_DIALOG DIALOGEX 0, 0, 372, 219
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Config Selector"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,191,198,50,14
+    PUSHBUTTON      "取消",IDCANCEL,254,198,50,14
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,7,7,341,183
+END
+
+IDD_BITETHRESHOLDDIALOG DIALOGEX 0, 0, 309, 211
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Bite threshold path",IDC_STATIC,14,121,69,14
+    EDITTEXT        IDC_EBiteThroldPath,95,119,102,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BBiteThroldPath,208,120,50,14
+    LTEXT           "Bite Data Path",IDC_STATIC,17,96,47,8
+    EDITTEXT        IDC_EBiteDataPath,95,92,101,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BBiteDataPath,208,92,50,14
+    LTEXT           "Bite Throld Module Path",IDC_STATIC,7,150,76,8
+    EDITTEXT        IDC_EThroldMoudelPath,95,147,102,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browser...",IDC_BBiteThroldModulePath,208,148,50,14
+    LTEXT           "Bite Count",IDC_STATIC,20,70,34,8
+    LTEXT           "(咬牙次数)",IDC_STATIC,159,72,38,13
+    LTEXT           "Bite Train Time",IDC_STATIC,18,45,48,8
+    LTEXT           "(S)   ",IDC_STATIC,158,43,18,16
+    GROUPBOX        "BiteIsTrain",IDC_STATIC,7,7,88,29
+    CONTROL         "1",IDC_RBiteTrain,"Button",BS_AUTORADIOBUTTON,15,21,20,10
+    CONTROL         "0",IDC_RBiteNotTrain,"Button",BS_AUTORADIOBUTTON,53,20,20,10
+    LTEXT           "(1 is for trian,0 is not for train)",IDC_STATIC,103,22,99,8
+    EDITTEXT        IDC_EBiteTrainTime,95,43,58,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EBiteCount,95,67,61,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "TODO:  <公司名>"
+            VALUE "FileDescription", "CoreModel"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CoreModel.exe"
+            VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
+            VALUE "OriginalFilename", "CoreModel.exe"
+            VALUE "ProductName", "TODO:  <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_BASETRAINWND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_INITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_DEVICESELDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        VERTGUIDE, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_VIEWERSELDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_TLDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        HORZGUIDE, 44
+    END
+
+    IDD_PUBLICDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_LEFTRIGHTBOTHDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        VERTGUIDE, 68
+        VERTGUIDE, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+        HORZGUIDE, 1
+        HORZGUIDE, 42
+    END
+
+    IDD_HLDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        VERTGUIDE, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 217
+    END
+
+    IDD_CONFIGSEL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_BITETHRESHOLDDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        VERTGUIDE, 95
+        VERTGUIDE, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。  请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "CoreModel\n\nCoreModel\n\n\nCoreModel.Document\nCoreModel.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "CoreModel"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权信息\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除所选内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制所选内容，将其放入剪贴板\n复制"
+    ID_EDIT_CUT             "剪切所选内容，将其放入剪贴板\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "重做上次撤消的操作\n重做"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "将窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到上一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "窗格 1"
+    IDS_STATUS_PANE2        "窗格 2"
+    IDS_TOOLBAR_STANDARD    "标准"
+    IDS_TOOLBAR_CUSTOMIZE   "自定义..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OUTPUT_WND          "输出"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BUILD_TAB           "生成"
+    IDS_DEBUG_TAB           "调试"
+    IDS_FIND_TAB            "查找"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EDIT_MENU           "编辑"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DEVICESETTING_SELDEVICE "Select the device dll"
+    ID_SETTING_ALOGRITHM    "Alogrithm Settign"
+    ID_SETTING_APPLICATION  "Select Application"
+    ID_SETTING_EEGVIEWER    "EEG data viewer "
+    ID_TRAINING_TRAINSETTING "select the train order"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#include "res\CoreModel.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#if !defined(_AFXDLL)
+#include "l.CHS\afxprint.rc"        // 打印/打印预览资源
+#include "l.CHS\afxribbon.rc"        // MFC 功能区和控件条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

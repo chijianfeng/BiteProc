@@ -1,0 +1,5 @@
+left end pos = 25
+right start pos = 64
+ratio1 = 0.333333
+ratio2 = 0.2
+ratio3 = 0.5

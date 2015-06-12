@@ -1,0 +1,3 @@
+Width = 1100
+Height = 500
+App Module Path = AppWheelChair.dll

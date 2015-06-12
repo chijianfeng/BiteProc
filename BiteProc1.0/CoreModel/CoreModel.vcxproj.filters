@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{aece3f6a-683a-4bb5-a722-5d4617cca0a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{df0bf2f4-a6f2-4788-aeb2-6e2d32af5bb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\interface">
+      <UniqueIdentifier>{7c5ff451-10ae-4b5f-9d18-6c822b93534d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Loader">
+      <UniqueIdentifier>{b564fc0e-80a1-4931-aa6c-213e0ed8efa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Selector">
+      <UniqueIdentifier>{e815f173-c960-4352-ad39-3e8269e30b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Selector\ConfigSel">
+      <UniqueIdentifier>{4c2ba704-abb8-4145-8fb2-f9a87bc71924}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CoreModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreModelDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreModelView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BasicDevice.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Structdefine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Streamoper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Stringoper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BaseArth.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Util\CommonUtile.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Util\FiltFilt.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Util\Matrix.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ITrainMsg.h">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ManagedData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\AlgParamConfig.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Util\FileOper.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader\ArthLoad.h">
+      <Filter>Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader\DeviceLoader.h">
+      <Filter>Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="TrainWndLoader.h">
+      <Filter>Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="MySpliter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EEGView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InitDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceSelDlg.h">
+      <Filter>Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseEEGViewerWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader\EEGViewerLoader.h">
+      <Filter>Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\IEEGViewer.h">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewerSelDlg.h">
+      <Filter>Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BaseTrainWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader\AppLoader.h">
+      <Filter>Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\IAppMsg.h">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BaseAppWnd.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="AppConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Configsel\BiteThresholdConfig.h">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClInclude>
+    <ClInclude Include="Configsel\ConfigSelDlg.h">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClInclude>
+    <ClInclude Include="Configsel\HLConfig.h">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClInclude>
+    <ClInclude Include="Configsel\LeftRightBothConfig.h">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClInclude>
+    <ClInclude Include="Configsel\PublicConfig.h">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClInclude>
+    <ClInclude Include="Configsel\TLConfig.h">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewerConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CoreModel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreModelDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreModelView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BasicDevice.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Streamoper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Stringoper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BaseArth.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Util\CommonUtile.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Util\FiltFilt.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ManagedData.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\AlgParamConfig.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Util\FileOper.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader\ArthLoad.cpp">
+      <Filter>Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader\DeviceLoader.cpp">
+      <Filter>Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainWndLoader.cpp">
+      <Filter>Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="MySpliter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EEGView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UserConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InitDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceSelDlg.cpp">
+      <Filter>Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseEEGViewerWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader\EEGViewerLoader.cpp">
+      <Filter>Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewerSelDlg.cpp">
+      <Filter>Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BaseTrainWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader\AppLoader.cpp">
+      <Filter>Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BaseAppWnd.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="AppConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Configsel\BiteThresholdConfig.cpp">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClCompile>
+    <ClCompile Include="Configsel\ConfigSelDlg.cpp">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClCompile>
+    <ClCompile Include="Configsel\HLConfig.cpp">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClCompile>
+    <ClCompile Include="Configsel\LeftRightBothConfig.cpp">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClCompile>
+    <ClCompile Include="Configsel\PublicConfig.cpp">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClCompile>
+    <ClCompile Include="Configsel\TLConfig.cpp">
+      <Filter>Selector\ConfigSel</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewerConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CoreModel.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\output_wnd.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\output_wnd_hc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="UserImages.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\CoreModelDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\CoreModel.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\oper.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CoreModel.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>
